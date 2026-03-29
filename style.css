@@ -80,3 +80,33 @@ button:hover {
 button:active {
     transform: translateY(0); /* Ele desce quando clicado */
 }
+
+.historico-container {
+    margin-top: 25px;
+    text-align: left;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+.historico-container h3 {
+    font-size: 14px;
+    color: #888;
+    text-transform: uppercase;
+}
+
+#listaHistorico {
+    list-style: none; /* Remove as bolinhas */
+    padding: 0;
+    max-height: 150px; /* Limita a altura */
+    overflow-y: auto;  /* Cria uma barra de rolagem se crescer demais */
+}
+
+#listaHistorico li {
+    background: #f9f9f9;
+    margin-bottom: 5px;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #444;
+    border-left: 4px solid #6c5ce7; /* Um detalhe roxo na lateral */
+}
