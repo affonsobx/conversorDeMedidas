@@ -110,3 +110,23 @@ button:active {
     color: #444;
     border-left: 4px solid #6c5ce7; /* Um detalhe roxo na lateral */
 }
+
+.historico-header {
+    display: flex;
+    justify-content: space-between; /* Coloca o título de um lado e o botão do outro */
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#btnLimpar {
+    width: auto; /* Não ocupa a largura toda */
+    padding: 5px 10px;
+    background: #d63031; /* Um vermelho suave */
+    font-size: 12px;
+    text-transform: none; /* Remove as letras maiúsculas */
+}
+
+#btnLimpar:hover {
+    background: #d41616; /* Vermelho mais forte ao passar o mouse */
+    box-shadow: 0 2px 8px rgba(214, 48, 49, 0.3);
+}

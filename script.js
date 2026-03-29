@@ -1,3 +1,5 @@
+let lista = document.getElementById('listaHistorico');
+
 function conversor() {
     let valorOriginal = document.getElementById('valorDigitado').value;
     let valorCorrigido = valorOriginal.replace(',','.') 
@@ -9,7 +11,12 @@ function conversor() {
         document.getElementById('resultado').innerText = resultadoFormatado;
         let novoItem = document.createElement("li");
         novoItem.innerText = metros + "m = " + resultadoFormatado + "cm";
-        let lista = document.getElementById("listaHistorico");
         lista.prepend(novoItem);
     }
+}
+
+function limparHistorico() {
+    lista.innerHTML = '';
+    document.getElementById("resultado").innerText = "0";
+    document.getElementById("valorDigitado").value = "";
 }
